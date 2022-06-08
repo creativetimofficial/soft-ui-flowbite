@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle-bg:after {
+  content: "";
+  @apply absolute left-0.5 top-0.5 bg-white border border-gray-300 h-5 w-5 rounded-full ring-0 transition;
+}
+
+input:checked + .toggle-bg:after {
+  transform: translateX(100%);
+  @apply border-white;
+}
+
+input:checked + .toggle-bg {
+  @apply bg-dark-700 border-dark-700;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  @apply text-dark-700;
+}
+/* chart styles */
+.apexcharts-tooltip {
+  @apply bg-white text-gray-700 border-0 rounded-lg shadow-lg !important;
+}
+
+.apexcharts-tooltip .apexcharts-tooltip-title {
+  @apply py-2 px-4 bg-gray-100 border-b border-gray-200 text-gray-900 !important;
+}
+
+.apexcharts-xaxistooltip {
+  @apply text-gray-700 border-0 bg-white rounded-lg shadow-lg !important;
+}
+
+.apexcharts-xaxistooltip-text {
+  @apply font-medium text-sm !important;
+}
+
+.apexcharts-xaxistooltip:before,
+.apexcharts-xaxistooltip:after {
+  @apply border-0 !important;
+}

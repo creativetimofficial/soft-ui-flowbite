@@ -1,0 +1,59 @@
+{
+  "name": "soft-ui-flowbite",
+  "version": "1.0.0",
+  "main": "static/js/app.bundle.js",
+  "private": true,
+  "author": "Creative Tim",
+  "license": "SEE LICENSE IN <https://www.creative-tim.com/license>",
+  "description": "Free admin dashboard template built with Flowbite based on Soft UI Design",
+  "homepage": "https://demos.creative-tim.com/soft-ui-flowbite/",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/soft-ui-flowbite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/soft-ui-flowbite.git"
+  },
+  "contributors": [
+    "Creative Tim",
+    "Flowbite"
+  ],
+  "scripts": {
+    "start": "run-p start:dev:*",
+    "start:dev:hugo": "hugo server -D --watch",
+    "start:dev:webpack": "webpack --mode=development --watch",
+    "build": "NODE_ENV=production && run-s build:webpack build:hugo",
+    "build:hugo": "hugo --destination=./.build",
+    "build:webpack": "webpack --mode=production",
+    "build:styles": "npx tailwindcss -i ./src/style.css -o ./dist/css/flowbite.css",
+    "deploy": "gh-pages -d .build"
+  },
+  "devDependencies": {
+    "css-loader": "6.4.0",
+    "css-minimizer-webpack-plugin": "3.1.1",
+    "file-loader": "6.2.0",
+    "mini-css-extract-plugin": "2.4.2",
+    "npm-run-all": "4.1.5",
+    "postcss": "8.3.9",
+    "postcss-loader": "6.2.0",
+    "postcss-preset-env": "6.7.0",
+    "source-map-loader": "3.0.0",
+    "style-loader": "3.3.0",
+    "tailwindcss": "3.0.15",
+    "webpack": "5.58.2",
+    "webpack-cli": "4.9.0",
+    "webpack-dev-server": "4.3.1",
+    "yarn": "1.22.17"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "5.10.0",
+    "@fullcalendar/daygrid": "5.10.0",
+    "@fullcalendar/interaction": "5.10.0",
+    "@popperjs/core": "2.10.2",
+    "apexcharts": "3.29.0",
+    "flowbite": "1.4.1",
+    "prismjs": "1.25.0",
+    "sortablejs": "1.14.0",
+    "svgmap": "2.7.1"
+  }
+}
