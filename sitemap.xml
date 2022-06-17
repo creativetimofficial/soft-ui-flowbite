@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://demos.creative-tim.com/soft-ui-flowbite/products/</loc>
+  </url>
+  <url>
+    <loc>https://demos.creative-tim.com/soft-ui-flowbite/sign-in/</loc>
+  </url>
+  <url>
+    <loc>https://demos.creative-tim.com/soft-ui-flowbite/sign-up/</loc>
+  </url>
+  <url>
+    <loc>https://demos.creative-tim.com/soft-ui-flowbite/</loc>
+  </url>
+  <url>
+    <loc>https://demos.creative-tim.com/soft-ui-flowbite/users/</loc>
+  </url>
+</urlset>
