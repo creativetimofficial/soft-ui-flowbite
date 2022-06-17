@@ -1,0 +1,27 @@
+languageCode: en
+title: Soft UI Flowbite
+baseURL: https://demos.creative-tim.com/soft-ui-flowbite/
+enableInlineShortcodes: true
+canonifyURLs: true
+params:
+  authors: Creative Tim
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    style: colorful
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+buildDrafts: true
+buildFuture: true
+enableRobotsTXT: true
+metaDataFormat: yaml
+disableKinds:
+  - "404"
+  - taxonomy
+  - taxonomyTerm
+  - RSS
+publishDir: build
